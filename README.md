@@ -39,7 +39,7 @@ The following Python libraries are required:
 ## Usage
 Run the script with the path to the MIDI file as a command-line argument:
 ```bash
-python your_script_name.py --file path/to/your/midi/file.mid --pitch 2
+python udpiano.py --file path/to/your/midi/file.mid --pitch 2
 ```
 If the `--file` argument is not provided, a file dialog will appear to select the MIDI file.
 
