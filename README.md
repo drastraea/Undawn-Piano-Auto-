@@ -1,30 +1,54 @@
-# Undawn-Piano-Auto-
-This Python script reads a MIDI file and simulates piano key presses on your computer using the `pyautogui` library.
+# Undawn Piano Auto
 
-## Features:
-- **MIDI Playback Simulation**: Interprets MIDI note events and simulates key presses corresponding to those notes.
-- **Pitch Modulation**: Allows you to apply pitch modulation to the notes being played.
-- **Customizable**: You can specify the MIDI file path and pitch modulation directly from the command line.
+## Description
 
-## Requirements:
-- `mido` for MIDI file parsing.
-- `pyautogui` for simulating key presses.
+This Python script simulates keyboard inputs based on MIDI file data to your Undawn game.
 
-## Usage:
-1. Install the required packages:
+## Features
+
+- Plays MIDI files by simulating keyboard inputs.
+- Allows pitch modulation of the MIDI notes.
+- Provides a file dialog for easy MIDI file selection if not provided via command-line arguments.
+- Uses colored terminal output for better readability.
+
+## Dependencies
+
+The following Python libraries are required:
+
+- `mido` for handling MIDI files.
+- `pyautogui` for simulating keyboard inputs.
+- `colorama` for colored terminal output.
+- `easygui` for file selection dialogs.
+
+## Installation
+
+1. Clone this repository or download the script.
+
    ```bash
-   pip install mido pyautogui
+   git clone https://github.com/drastraea/Undawn-Piano-Auto.git
    ```
-2. Run the script with the desired MIDI file and pitch modulation:
+2. Navigate to the project directory.
    ```bash
-   python midi_auto_keypress.py --file path/to/your/midi/file.mid --pitch 2
+   cd your-repository
+   ```
+3. Install the required dependencies.
+   ```bash
+   pip install -r requirements.txt
    ```
 
-##Command-Line Arguments:
---file: Path to the MIDI file to play.
---pitch: Pitch modulation to apply to the MIDI notes.
-
-Example:
+## Usage
+Run the script with the path to the MIDI file as a command-line argument:
 ```bash
-python midi_auto_keypress.py --file example.mid --pitch 1
+python your_script_name.py --file path/to/your/midi/file.mid --pitch 2
 ```
+If the `--file` argument is not provided, a file dialog will appear to select the MIDI file.
+
+## Arguments
++ `--file`: Path to the MIDI file to play.
++ `--pitch`: Integer value to add as pitch modulation. Default is `0`.
+
+## Example
+```bash
+python udpiano.py --file example.mid --pitch 2
+```
+This command plays the `example.mid` file with a pitch modulation of `2`.
