@@ -25,11 +25,11 @@ The following Python libraries are required:
 1. Clone this repository or download the script.
 
    ```bash
-   git clone https://github.com/drastraea/Undawn-Piano-Auto.git
+   git clone https://github.com/drastraea/Undawn-Piano-Auto-.git
    ```
 2. Navigate to the project directory.
    ```bash
-   cd your-repository
+   cd Undawn-Piano-Auto
    ```
 3. Install the required dependencies.
    ```bash
