@@ -4,11 +4,6 @@
 
 This Python script simulates keyboard inputs based on MIDI file data to your Undawn game.
 
-## Support Me
-If you enjoy my work and would like to support me, you can buy me a coffee on Ko-fi!
-
-[![Support Me on Ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/drastraea)
-
 ## Features
 
 - Plays MIDI files by simulating keyboard inputs.
@@ -57,3 +52,8 @@ If the `--file` argument is not provided, a file dialog will appear to select th
 python udpiano.py --file example.mid --pitch 2
 ```
 This command plays the `example.mid` file with a pitch modulation of `2`.
+
+## Support Me
+If you enjoy my work and would like to support me, you can buy me a coffee on Ko-fi!
+
+[![Support Me on Ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/drastraea)
